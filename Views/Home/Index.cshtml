@@ -1,8 +1,62 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Well, yes... But how to code it?";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - MiniBlog</title>
+    <link rel="stylesheet" href="~/css/site.css"/>
+    <script src="~/js/site.js"></script>
+</head>
+<body>
+<div class="navbar">
+    <div class="row">
+        <div class="column" style="text-align: left;">
+            <a href="#">
+                <img src="~/img/menu_icon.ico" alt="menu"/>
+            </a>
+            <a href="#">
+                <img src="~/img/search_icon.ico" alt="search"/>
+            </a>
+        </div>
+        <div class="column" style="text-align: right;">
+            <a href="#">
+                <img src="~/img/facebook_icon.ico" alt="facebook"/>
+            </a>
+            <a href="#">
+                <img src="~/img/twitter_icon.ico" alt="twitter"/>
+            </a>
+        </div>
+        <div class="row">
+            <h2>
+                Well, yes... But how to code it?
+            </h2>
+            <h3>
+                Tiny programming blog
+            </h3>
+        </div>
+    </div>
+    <div class="topics">
+        <a href="#">Databases</a>
+        <a href="#">.NET</a>
+        <a href="#">Raspberry Pi</a>
+        <a href="#">Arduino</a>
+        <a href="#">Python</a>
+        <a href="#">Flutter</a>
+    </div>
 </div>
+<div class="footer">
+    <a href="#">ABOUT</a>
+    <a href="#">PRIVACY</a>
+    <a href="#">SOCIAL</a>
+    <a href="#">CONTACT</a>
+    <p>
+        Designed by Marta Mazurkiewicz
+    </p>
+</div>
+
+</body>
+
+</html>

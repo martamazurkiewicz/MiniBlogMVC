@@ -1,71 +1,134 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+.footer a, .topics a {
+  color: white;
+  text-decoration: none;
 }
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+* {
+  box-sizing: border-box;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+[class*=column-] {
+  float: left;
+  width: 100%;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
+@media only screen and (min-width: 768px) {
+  .column-1 {
+    width: 8.33%;
+  }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
+  .column-2 {
+    width: 16.66%;
+  }
+
+  .column-3 {
+    width: 25%;
+  }
+
+  .column-4 {
+    width: 33.33%;
+  }
+
+  .column-5 {
+    width: 41.66%;
+  }
+
+  .column-6 {
+    width: 50%;
+  }
+
+  .column-7 {
+    width: 58.33%;
+  }
+
+  .column-8 {
+    width: 66.66%;
+  }
+
+  .column-9 {
+    width: 75%;
+  }
+
+  .column-10 {
+    width: 83.33%;
+  }
+
+  .column-11 {
+    width: 91.66%;
+  }
+
+  .column-12 {
+    width: 100%;
   }
 }
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+img {
+  width: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: black;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  color: white;
 }
+
+button {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  transform: translateY(-4px);
+  color: white;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  background-color: gray;
+  border-color: gray;
+}
+
+.navbar {
+  border-bottom: 1px solid white;
+}
+.navbar img {
+  max-height: 23px;
+  width: auto;
+}
+.navbar .column {
+  width: 50%;
+  float: left;
+}
+
+.topics a {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+  border-top: 1px solid white;
+  padding-top: 1%;
 }
+.footer a {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+a:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=site.css.map */
